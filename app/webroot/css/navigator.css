@@ -1,0 +1,40 @@
+/* 
+    Document   : navigator
+    Created on : 24/08/2013, 14:21:59
+    Author     : thiago
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    display: block;
+    padding: 0;	
+    margin: 0;
+    float: left;
+    width: 100%;
+    background: #222;
+    font-size: 1.2em;
+    /*background: url(topnav_bg.gif) repeat-x;*/
+}
+nav ul {text-align:center;}
+nav a{
+    text-decoration: none;
+}
+nav ul li {float:left;display:inline;}
+
+nav ul li a {display:block;padding:5px 25px 5px 25px;color:#CCC;}
+nav ul li a:hover{color: #F4F4F4}
+
+nav ul li ul {background: #222;margin:0;  position:absolute;width:110px; list-style: none;}
+nav ul li ul li {margin: 0; width:110px;}
+nav ul li ul li a {display:block;margin: 0; padding:5px 10px 0 0;color: #FFF;}
+nav ul li ul li:hover a {color:#FFA500;}
+
+nav ul li ul.fallback {display:none;}
+nav ul li:hover ul.fallback {display:block;}
